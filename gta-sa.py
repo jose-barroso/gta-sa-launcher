@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------
 # GTA San Andreas Steam Launcher
-# Audit: noodlechan
+# Audit: noodlechan (my nickname on steam)
 #
 # Handles launching of Single-player, SA-MP and MTA. Also does the
 # exe-swap trick so SA-MP can run through Steam.
