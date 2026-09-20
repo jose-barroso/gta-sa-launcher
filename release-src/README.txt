@@ -7,7 +7,9 @@ Single-player, SA-MP and MTA in one place.
 HOW TO RUN
 ----------
 1. Extract this folder anywhere you want
-2. Run GTA-SA-Launcher.exe
+2. Compile with "compile.bat"
+3. Copy "gta-sa.exe" to your San Andreas installation root directory
+4. Run gta-sa.exe
 3. Enjoy
 
 No installation required. No Python required.
@@ -32,4 +34,4 @@ TROUBLESHOOTING
 
 MORE INFO
 ---------
-https://github.com/SEU-USER/gta-sa-launcher
+https://github.com/jose-barroso/gta-sa-launcher
