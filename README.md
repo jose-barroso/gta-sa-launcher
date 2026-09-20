@@ -36,9 +36,9 @@
 **No Python required.**
 
 1. Go to the [Releases page](https://github.com/jose-barroso/gta-sa-launcher/releases/latest)
-2. Download the latest `GTA-SA-Launcher-vX.X.X.zip`
-3. Extract it anywhere
-4. Run `GTA-SA-Launcher.exe`
+2. Download `gta-sa.exe`
+3. Copy it into your GTA San Andreas folder (the one that contains `gta_sa.exe`)
+4. Run `gta-sa.exe`
 
 > **Windows SmartScreen warning?** Click "More info" → "Run anyway". The exe isn't code-signed, so Windows may flag it the first time.
 
