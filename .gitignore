@@ -1,0 +1,29 @@
+# Build output
+build/
+dist/
+*.spec
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# Portable Python (too heavy for git, ~200 MB)
+python-portable/
+
+# Release artifacts
+release/
+*.zip
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
