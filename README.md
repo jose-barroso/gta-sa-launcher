@@ -4,9 +4,9 @@
 
 **All-in-one launcher for GTA San Andreas: Single-player, SA-MP and MTA in one place.**
 
-[![Release](https://img.shields.io/github/v/release/SEU-USER/gta-sa-launcher?style=for-the-badge)](https://github.com/SEU-USER/gta-sa-launcher/releases)
-[![License](https://img.shields.io/github/license/SEU-USER/gta-sa-launcher?style=for-the-badge)](LICENSE)
-[![Platform](https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge)](https://github.com/SEU-USER/gta-sa-launcher/releases)
+[![Release](https://img.shields.io/github/v/release/jose-barroso/gta-sa-launcher?style=for-the-badge&color=brightgreen)](https://github.com/jose-barroso/gta-sa-launcher/releases)
+[![License](https://img.shields.io/github/license/jose-barroso/gta-sa-launcher?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows-blue?style=for-the-badge)](https://github.com/jose-barroso/gta-sa-launcher/releases)
 
 </div>
 
@@ -14,8 +14,7 @@
 
 ## 📸 Preview
 
-> *(Substitui isto por um screenshot ou GIF do launcher em ação)*
-> ![Screenshot](screenshot.png)
+[![GTA SA Launcher](img/screenshot.png)](img/screenshot.png)
 
 ---
 
@@ -24,28 +23,113 @@
 | Feature | Description |
 |---------|-------------|
 | 🎯 Single-player | Launch the original GTA San Andreas story mode |
-| 🌐 SA-MP | Launch San Andreas Multiplayer servers |
+| 🌐 SA-MP | Launch San Andreas Multiplayer |
 | 🎮 MTA | Launch Multi Theft Auto |
 | 🖥️ Steam Overlay | Keeps the Steam overlay working with SA-MP |
 | 📦 Portable | No installation required — just run the `.exe` |
-| 🐍 No Python needed | Standalone executable, everything bundled in |
+| 🐍 No Python needed | Everything is bundled into a standalone executable |
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Download & Run
 
-### For users (no Python required)
+**No Python required.**
 
-1. Download the latest `GTA-SA-Launcher-vX.X.X.zip` from the [Releases page](https://github.com/SEU-USER/gta-sa-launcher/releases)
-2. Extract it anywhere
-3. Run `GTA-SA-Launcher.exe`
+1. Go to the [Releases page](https://github.com/jose-barroso/gta-sa-launcher/releases/latest)
+2. Download the latest `GTA-SA-Launcher-vX.X.X.zip`
+3. Extract it anywhere
+4. Run `GTA-SA-Launcher.exe`
 
-### For developers
+> **Windows SmartScreen warning?** Click "More info" → "Run anyway". The exe isn't code-signed, so Windows may flag it the first time.
+
+---
+
+## 🛠️ Building from Source
+
+If you want to build the executable yourself:
 
 ```bash
-# Clone the repo
-git clone https://github.com/SEU-USER/gta-sa-launcher.git
+git clone https://github.com/jose-barroso/gta-sa-launcher.git
 cd gta-sa-launcher
+compile.bat
+```
 
-# Build the executable (portable Python included)
-compilar.bat
+The build script uses a bundled portable Python, so **no Python installation is needed** on your machine.
+
+<details>
+<summary>📁 Project structure</summary>
+
+```
+gta-sa-launcher/
+├── gta-sa.py              # Main application
+├── compile.bat            # Build script
+├── img/                   # Icons and images
+│   ├── bg.webp
+│   ├── icon.ico
+│   ├── mta.png
+│   ├── samp.png
+│   └── sp.png
+├── python-portable/       # Bundled Python (for building)
+└── dist/                  # Output folder (after build)
+    └── GTA-SA-Launcher.exe
+```
+
+</details>
+
+---
+
+## 📋 Requirements
+
+### Running the launcher
+- Windows 10 or newer (64-bit)
+- GTA San Andreas installed
+
+### Building from source
+- Windows 10 or newer (64-bit)
+- Internet connection (only on the first build, to fetch Python packages)
+
+---
+
+## 🧰 Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Language | Python 3.14 |
+| GUI | Tkinter |
+| Image handling | Pillow |
+| System info | psutil |
+| Windows API | pywin32 |
+| Packaging | PyInstaller |
+
+---
+
+## 🗺️ Roadmap
+
+- [x] Single-player launcher
+- [x] SA-MP support
+- [x] MTA support
+- [x] Steam overlay compatibility
+- [x] Portable build (no Python required)
+- [ ] Auto-updater
+- [ ] Server browser for SA-MP
+- [ ] Custom install path for GTA SA
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to open an [issue](https://github.com/jose-barroso/gta-sa-launcher/issues) or submit a Pull Request.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
+<div align="center">
+
+**Made with ❤️ for the GTA SA community**
+
+</div>
