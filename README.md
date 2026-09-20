@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎮 GTA SA Launcher
+# 🎮 GTA San Andreas Launcher
 
 **All-in-one launcher for GTA San Andreas: Single-player, SA-MP and MTA in one place.**
 
@@ -110,9 +110,6 @@ gta-sa-launcher/
 - [x] MTA support
 - [x] Steam overlay compatibility
 - [x] Portable build (no Python required)
-- [ ] Auto-updater
-- [ ] Server browser for SA-MP
-- [ ] Custom install path for GTA SA
 
 ---
 
